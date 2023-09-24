@@ -3,6 +3,10 @@ const { MongoClient } = require('mongodb');
 const routes = require('../src/routes/routes.js'); // Importa as rotas definidas no arquivo "routes.js"
 const cors = require('cors');
 
+const dotenv = require('dotenv');
+dotenv.config();
+
+
 const app = express();
 const port = process.env.PORT || 5000;
 
